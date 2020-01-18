@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shinichiro Kuwahara</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <div id="ar" class="big-bg-ar">
+        <header class="page-header wrapper">
+            <h1><a href="../index.html">SK</a></h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About / Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="work-content-ar wrapper">
+            <h2 class="work-title">Time Traveler in Chicago</h2>
+            <p class="work-description">Augumented reality application to help passengers learn about and enjoy the city's history in a bus.</p>
+        </div><!-- pedestal content -->
+    </div><!-- /#pedestal -->
+
+    <div class="info wrapper">
+        <article>
+            <div class="info-title">
+                <h3>Introduction</h3>
+                <p>This is the second interaction design project in the Introduction class at IIT Institute of Design (ID).<br>
+                    Each student was assigned to design an augumented reality (AR) application which would be run on a window of CTA bus or train.
+                </p>
+                <p>I made "Time Traveler in Chicago" that gives commuters and tourists opportunities of enjoying, experiencing and learning about the history of Chicago. 
+                    The app projects old pictures on a window which were taken at the same location where a bus is running.
+                </p>
+            </div>
+            
+            <div class="info-title">
+                <h3>Problem</h3>
+                <p>
+                    There were two problems I would like to solve. First one was how to entertain communters. 
+                    From my experience, I assumed that commuters might have gotten bored with the same view from a window of bus or train when they commute. 
+                    I tried to give them a new kind of experiences.
+                </p>
+                <p>
+                    The second was how to maximize tourists' experiences while they stayed in the city. 
+                    Considering when I had visited Chicago for sightseeing, I thought that I may have increased my experience while riding the bus. 
+                    That was because a bus would give an oppotunity for tourists to look around the city.
+                </p>
+                <div class="info-grid">
+                    <img src="../images/AR05.jpeg" alt="">
+                    <img src="../images/AR06.jpeg" alt="">
+                </div>
+            </div>
+
+            <div class="info-title">
+                <h3>Process</h3>
+                <div class="info-content sketch">
+                    <h4>Wireframe</h4>
+                    <p>
+                        When I made 10 rough ideas at the beginning, most of them were weather forecast apps because it seemed to be interesting to project weather condition on a bus window. 
+                        However, when I presented them in a class, my classmates did not understand the necessity to see weather forecast on a window. 
+                    </p>
+                    <p>
+                        Then, I changed my theme from weather forecast to history which was my last idea of my wireframes. 
+                        The idea was inspired by a Japanese popular TV program that went around cities with their old maps to introduce the histories. 
+                        I assumed that the idea would be more interesting because I had never seen an AR app projecting historical scenes.
+                    </p>
+                    <div class="info-item info-grid">
+                        <img src="../images/AR04_Page_1.jpg" alt="">
+                        <img src="../images/AR04_Page_4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-content prototype">
+                <h4>Prototype</h4>
+                <p>
+                    In the 1st prototype created in Principle, after selecting a category and an age, users can see a past object from an old photo mixed in the current view. 
+                    When users tap the object, they can see the photo information that where it was taken and who took it. 
+                    However, when I demonstrated in the class, I got feedback that it was weird and confusing that a past photo and a current view existed together.
+                </p>
+                <div class="info-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zv8cSEyULIg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="info-grid">
+                    <img src="../images/AR09.jpg" alt="">
+                    <img src="../images/AR08.jpg" alt="">
+                    <img src="../images/AR10.jpg" alt="">
+                    <img src="../images/AR07.jpg" alt="">
+                </div>
+                <p>
+                    In the 2nd prototype, I changed an age selection screen from a circle style to a bar style because time sequence is linear. 
+                    I made a split line to change a past photo and a current view inspired by <a href="https://www.kaleidoscopeapp.com/" target="_blank">Kaleidoscope</a> 
+                    and <a href="https://codepen.io/tutsplus/pen/bWKMoK" target="_blank">Split-Screen UI</a> to help users to distinguish them more easily. 
+                    Additionally, the animation of time travel was made to make user experience newer, more stylish and more entertaining.
+                </p>
+                <div class="info-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-dHUqllts1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="info-grid">
+                    <img src="../images/AR11.jpg" alt="">
+                    <img src="../images/AR12.jpg" alt="">
+                    <img src="../images/AR13.jpg" alt="">
+                    <img src="../images/AR14.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="info-title">
+                <h3>Solution</h3>
+                <p>
+                    The final version became consisted with circle shaped designs such as a clock, a lens and the time travel animation based on feedback for the 2nd prototype. 
+                    I added a function to capture a view to make the app more feasible when users use it in a moving bus. 
+                    Also, a category selection screen was changed to a filter to simplify the user experience. 
+                    From an educational point of view, I added more detail infomation of an old object. 
+                </p>
+                <div class="info-item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tgVgJP6hJKw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="info-grid">
+                    <img src="../images/AR15.jpg" alt="">
+                    <img src="../images/AR16.jpg" alt="">
+                    <img src="../images/AR17.jpg" alt="">
+                    <img src="../images/AR18.jpg" alt="">
+                </div>
+            </div>
+        </article>
+        <aside>
+            <header>
+                <h3 class="info-subtitle">Time</h3>
+            </header>
+            <p>Oct.2019 (4 weeks)</p>
+            <header>
+                <h3 class="info-subtitle">Role</h3>
+            </header>
+            <p>Designer of a personal project</p>
+            <header>
+                <h3 class="info-subtitle">Work</h3>
+            </header>
+            <p>Wireframes<br>
+                Sketch<br>
+                Principle<br>
+                Augumented reality
+            </p>
+        </aside>
+    </div>
+</body>

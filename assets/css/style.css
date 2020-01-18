@@ -1,0 +1,449 @@
+@charset "utf-8";
+
+/* Overall
+----------------------------*/
+html{
+    font-size: 100%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #000;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/* HEADER
+----------------------------*/
+.main-nav {
+    display: flex;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 20px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    color: #fff;
+}
+.main-nav a:hover {
+    color: #4699ca;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.page-header a {
+    color: white;
+}
+.wrapper{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* Home
+-----------------------*/
+.home-content {
+    text-align: left;
+    position: absolute;
+    z-index: 0;
+    left: 4%;
+    top: 15%;
+    max-width: 70%;
+    font-size: 150%;
+    line-height: 1.3;
+}
+.home-content h2 {
+    margin-bottom: 2%;
+}
+
+/*　Page-title */
+.page-title {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 40px;
+    line-height: 1;
+}
+
+/* Menu */
+.menu-title {
+    font-size: 1.5rem;
+    color: #00005d;
+    border-bottom: 5px solid rgba(0, 0, 93, 1);
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+.menu-content {
+    position: absolute;
+    z-index: 0;
+    top: 40%;
+    left: 4%;
+    margin-top: 8%;
+}
+.grid {
+    display: grid;
+    gap: 36px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+    max-width: 1000px;
+}
+.pedestal {
+    width: 500px;
+    height: 357.6px;
+    object-fit: cover;
+    object-position: 0% 15%;
+}
+.ar {
+    height: 357.6px;
+    object-fit: cover;
+}
+.prius {
+    width: 500px;
+    height: 357.6px;
+    object-fit: cover;
+    object-position: 100% 0%;
+}
+.ev {
+    width: 500px;
+    height: 357.6px;
+    object-fit: cover;
+    object-position: 0% 100%;
+}
+.item p {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.item .caption {
+	text-align: center;
+	padding-top: 140px;
+	color:	#fff;
+}
+.caption h2 {
+    font-size: 200%;
+    line-height: 1;
+}
+.caption p {
+    font-weight: lighter;
+    font-style: normal;
+}
+.caption img {
+    width: 40px;
+}
+.item .mask {
+	width: 100%;
+	height: 357.6px;
+	position: absolute;	/* 絶対位置指定 */
+	top: 0;
+	left: 0;
+	opacity: 0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition: all 0.2s ease;
+    transition:	all 0.2s ease;
+    border-radius: 4px;
+}
+.item:hover .mask {
+	opacity:1;	/* マスクを表示する */
+}
+.item {
+    position: relative;	/* 相対位置指定 */
+}
+.item img {
+    border-radius: 4px;
+}
+
+/* sns */
+.sns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    margin-left: 40%;
+}
+.LinkedIn {
+    width: 50px;
+    height: 50px;
+}
+.Facebook {
+    width: 50px;
+    height: 50px;
+}
+.Instagram {
+    width: 50px;
+    height: 50px;
+}
+
+/* About
+--------------------------------*/
+.portrait {
+    width: 500px;
+    height: 750px;
+    object-fit: cover;
+    object-position: 100% 60%;
+    float: right;
+    margin-top: 3%;
+}
+.about-content article{
+    margin-top: 10%;
+    margin-left: 12%;
+    text-align: left;
+}
+.about-content {
+    display: flex;
+    justify-content: space-between;
+}
+.about-content p {
+    margin-bottom: 5%;
+    width: 500px;
+}
+.contact {
+    margin-top: 20%;
+}
+/*　button */
+.button {
+    font-size: 1rem;
+    background: #0000b1;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 32px;
+    line-height: 1.2;
+}
+.button:hover {
+    background: #00005d;
+}
+
+/* Pedestal
+-----------------------------------*/
+.big-bg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right 0px top 50px;
+}
+#pedestal {
+    background-image: url(../../images/Pedestal_flipped.jpg);
+    min-height: 100vh;
+    background-color: #bdc6c7;
+}
+.work-title {
+    text-transform: none;
+    font-size: 225%;
+}
+.work-content {
+    padding-top: 20%;
+}
+.work-description {
+    width: 550px;
+    font-size: 125%;
+    font-style: normal;
+}
+.info {
+    display: flex;
+    justify-content: left;
+    padding-bottom: 50px;
+}
+.info article {
+    width: 61%;
+    order: 2;
+    padding-left: 50px;
+}
+.info aside {
+    width: 20%;
+    order: 1;
+}
+.info-title h3 {
+    font-size: 200%;
+    margin-top: 30px;
+    display: inline-block;
+    line-height: 1.5;
+}
+.info-subtitle {
+    margin-top: 50px;
+    border-bottom: .3px solid #000;
+}
+.info p {
+    margin-bottom: 30px;
+}
+.info-grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4%;
+    margin-bottom: 50px;
+}
+.info-content h4 {
+    font-size: 150%;
+    color: rgba(0, 0, 0, .5);
+}
+.info-item {
+    margin-bottom: 50px;
+}
+.info-item img {
+    margin: 25px 0  ;
+}
+/* Slider */
+.slider {
+    position: relative;
+    width: 1000px;
+    height: 640px;
+    margin: 0 auto;
+}
+
+.slider h5 {
+    font-size: 150%;
+    font-style: italic;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, .6);
+}
+.slider .slider-inner {
+    position: relative;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.slider .slider-inner li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    pointer-events: none;
+    list-style: none;
+}
+
+.slider .slider-inner li.show {
+    opacity: 1;
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    z-index: 1;
+    pointer-events: auto
+}
+
+.slider .nav {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0
+}
+
+.slider .nav li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-radius: 15px;
+    background: #ddd;
+    cursor: pointer;
+    -webkit-transition: background 400ms;
+    transition: background 400ms
+}
+
+.slider .nav li:hover {
+    background: #aaa
+}
+
+.slider .nav li.current {
+    background: #aaa
+}
+
+.slider .arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    width: 30px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    line-height: 40px;
+    padding: 5px;
+    -webkit-transition: opacity 400ms;
+    transition: opacity 400ms
+}
+
+.slider .arrow:hover {
+    opacity: .7;
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"
+}
+
+.slider .arrow#arrow-prev {
+    left: 0;
+    -webkit-transform: translate(-100%,-50%);
+    transform: translate(-100%,-50%)
+}
+
+.slider .arrow#arrow-next {
+    right: 0;
+    -webkit-transform: translate(100%,-50%);
+    transform: translate(100%,-50%)
+}
+
+/* File Folder
+------------------------------------*/
+
+/* AR Application
+------------------------------------*/
+
+/* Prius
+----------------------------------------*/
+#prius {
+    background-image: url(../../images/Prius.jpg);
+    min-height: 100vh;
+}
+.big-bg-prius {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: white;
+}
+.work-content-prius {
+    padding-top: 10%;
+    color: white;
+}
+.work-content-ev {
+    padding-top: 10%;
+}
+
+/* EV
+--------------------------------------*/
+#ev {
+    background-image: url(../../images/Prius02.jpg);
+    min-height: 100vh;
+}
+.big-bg-ev {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+}
+
+/* AR
+-------------------------------------*/
+#ar {
+    background-image: url(../../images/AR03.jpg);
+    min-height: 100vh;
+}
+.big-bg-ar {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.work-content-ar {
+    padding-top: 10%;
+    color: white;
+}
